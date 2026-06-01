@@ -1,0 +1,66 @@
+.press-start-2p-regular {
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+*{
+    font-family: "Press Start 2P";
+}
+body {
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+    background-color: darkgreen;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    -webkit-font-smoothing: none;
+  -moz-osx-font-smoothing: none;
+  font-smooth: never;
+  position: relative;
+}
+.menu {
+display:flex;
+flex-direction: column;
+gap: 5px;
+width: fit-content;
+}
+button {
+    background-image: url(./button.png);
+    border: none;
+    width: 160px;
+    height: 64px;
+    background-color: transparent;
+}
+button:hover {
+    background-image: url(./buttonpressed.png);
+}
+#teacher {
+    margin: auto;
+    width: 128px;
+    height: 128px;
+    background-image: url(./teacher.gif);
+}
+.teacherplace {
+    
+    width: 100%;
+}
+#game {
+    position: fixed;
+    background-color: darkgreen;
+    z-index: 100;
+    top: 128px;
+    height: 100%;
+    width: 100%;  
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+}
+#game.hidden {
+    display: none;
+}
+#board {
+    background-image: url(./board.png);
+    width: 512px;
+    height: 256px;
+    margin-bottom: 256px;
+}
